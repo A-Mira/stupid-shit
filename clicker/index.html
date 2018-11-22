@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Clicker</title>
+  <link type="text/css" rel="stylesheet" href="css/micss.css"/>
+</head>
+<body>
+
+  <div id="panel1" class="principal">
+    <div class="candies">
+      <p>Tienes ahora mismo <span id="number">0</span> caramelos.</p>
+    </div>
+    <div id="big">
+      <img id="bigcandy" width="20%" onclick="cClick()" src="images/candy.png" alt="CARAMELO">
+    </div>
+    <div class="candies">
+      <p>Estás consiguiendo <span id="cps">0</span> caramelos por segundo (CPS).</p>
+    </div>
+  </div>
+
+  <div id="panel2" class="principal">
+    <div id="cursor" class="producto" title="Cada cursor hace un click cada 10 segundos">
+      <img height="50px" src="images/cursor.png" alt="CURSOR"> <p>Tienes actualmente: <span id="nCursores">0</span> cursores</p>
+      <button onclick="buyCursor()" type="button" name="Buy">Comprar (<span id="pCursor">10</span> candies)</button>
+    </div>
+
+    <div id="wonka" class="producto" title="Cada wonka fabrica 1 caramelo por segundo">
+      <img height="50px" src="images/wonka.jpg" alt="WONKAS"> <p>Tienes actualmente: <span id="nWonkas">0</span> Wonkas</p>
+      <button onclick="buyWonka()" type="button" name="Buy">Comprar (<span id="pWonka">50</span> candies)</button>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="js/mijs.js"></script>
+</body>
+</html>

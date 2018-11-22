@@ -1,0 +1,41 @@
+.principal{
+  width: 43%;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.producto{
+  border: 1px solid black;
+  height: 50px;
+}
+
+#panel2{
+  margin-left: 5%;
+  float: right;
+}
+
+#panel1{
+  text-align: center;
+}
+
+p{
+  display: inline;
+}
+
+button{
+  float: right;
+}
+#big{
+  height: 370px;
+}
+#bigcandy{
+  position: absolute;
+  left: 10%;
+  top: 5%;
+}
+#bigcandy:active {
+  transition: 0.5s;
+  transform: perspective(100px) scaleZ(2) translateZ(-20px);
+    /* width: 15%;
+    height: 15%; */
+}
