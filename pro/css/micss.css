@@ -1,0 +1,42 @@
+header{
+  width: 100%;
+  border:1px solid black;
+  margin-bottom: 10px;
+}
+
+aside{
+  float: left;
+  display: inline-block;
+  border:1px solid black;
+  width: 20%;
+  height: 300px;
+}
+
+.formText{
+  display: inline-block;
+  width: 100%;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.lista-temas{
+  border: 1px solid black;
+  width: 100%;
+  left: 20%;
+  margin-left: 10px;
+  float: left;
+}
+.contenedor-lista{
+  width: 75%;
+  margin-left: 10px;
+  float: left;
+}
+
+#formu{
+  width: 80%;
+}
+
+span{
+  float: left;
+}

@@ -1,0 +1,58 @@
+html{
+  cursor: crosshair;
+}
+#formu, #desc{
+  width: 70%;
+}
+
+#add{
+  width: 25%;
+  margin-left: 3%;
+}
+
+#tareas, #done{
+  border: 1px solid black;
+  width: 45%;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#done{
+  margin-left: 5%;
+}
+
+#delete{
+  width: 43%;
+  margin-left: 52%;
+}
+
+.tarea{
+  border: 1px solid black;
+  /* height: 21px; */
+  text-align: center;
+  display: flex;
+  flex-flow:wrap row;
+}
+
+.titulo{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .doneButton{
+  float: right;
+} */
+
+
+
+.description{
+  display: none;
+  text-align: center;
+  border: white;
+  margin-top: 5px;
+  width: 100%;
+}
+.show{
+  display: block;
+}

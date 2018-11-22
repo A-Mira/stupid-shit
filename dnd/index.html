@@ -1,0 +1,159 @@
+<!-- Fuerza, Agilidad, Constitucion, Inteligencia, Sabiduría, Carisma -->
+<!-- Modificador = (Caracteristica - 10) / 2 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link type="text/css" rel="stylesheet" href="css/micss.css"/>
+</head>
+<body>
+
+  <div class="tabla">
+    <table>
+      <tr>
+        <td><h3>CARACTERISTICA</h3></td>
+        <td><h3>VALOR</h3></td>
+        <td><h3>MODIFICADOR</h3></td>
+      </tr>
+      <tr>
+        <td>FUERZA</td>
+        <td><input onkeyup="calcular('fuerza')" id="fuerza" type="text" name="Fuerza"></td>
+        <td id="bonofuerza"></td>
+      </tr>
+      <tr>
+        <td>AGILIDAD</td>
+        <td><input onkeyup="calcular('agilidad')" id="agilidad" type="text" name="agilidad"></td>
+        <td id="bonoagilidad"></td>
+      </tr>
+      <tr>
+        <td>CONSTITUCION</td>
+        <td><input onkeyup="calcular('constitucion')" id="constitucion" type="text" name="constitucion"></td>
+        <td id="bonoconstitucion"></td>
+      </tr>
+      <tr>
+        <td>INTELIGENCIA</td>
+        <td><input onkeyup="calcular('inteligencia')" id="inteligencia" type="text" name="inteligencia"></td>
+        <td id="bonointeligencia"></td>
+      </tr>
+      <tr>
+        <td>SABIDURÍA</td>
+        <td><input onkeyup="calcular('sabiduria')" id="sabiduria" type="text" name="sabiduria"></td>
+        <td id="bonosabiduria"></td>
+      </tr>
+      <tr>
+        <td>CARISMA</td>
+        <td><input onkeyup="calcular('carisma')" id="carisma" type="text" name="carisma"></td>
+        <td id="bonocarisma"></td>
+      </tr>
+    </table>
+    <div class="cajadados">
+      <div class="dado">
+        <img onclick="roll(4)" width="20%" src="images/d4.png" alt="1d4">
+      </div>
+
+      <div class="dado">
+        <img onclick="roll(6)" width="20%" src="images/d6.png" alt="1d6">
+      </div>
+      <div class="dado">
+        <img onclick="roll(8)" width="20%" src="images/d8.png" alt="1d8">
+      </div>
+      <div class="dado">
+        <img onclick="roll(10)" width="20%" src="images/d10.png" alt="1d10">
+      </div>
+      <div class="dado">
+        <img onclick="roll(12)" width="20%" src="images/d12.png" alt="1d12">
+      </div>
+      <div class="dado">
+        <img onclick="roll(20)" width="20%" src="images/d20.png" alt="1d20">
+      </div>
+    </div>
+    <div id="panel">
+
+    </div>
+  </div>
+  <div class="tabla t2">
+    <table>
+      <tr>
+        <td><h4>HABILIDAD</h4></td>
+        <td> <h4>MODIFICADOR</h4></td>
+      </tr>
+      <tr>
+        <td>Acrobacias</td>
+        <td id="acro"></td>
+      </tr>
+      <tr>
+        <td>Trato con Animales</td>
+        <td id="anim"></td>
+      </tr>
+      <tr>
+        <td>Conocimiento Arcano</td>
+        <td id="arca"></td>
+      </tr>
+      <tr>
+        <td>Atletismo</td>
+        <td id="atle"></td>
+      </tr>
+      <tr>
+        <td>Engaño</td>
+        <td id="enga"></td>
+      </tr>
+      <tr>
+        <td>Historia</td>
+        <td id="hist"></td>
+      </tr>
+      <tr>
+        <td>Buscar</td>
+        <td id="busc"></td>
+      </tr>
+      <tr>
+        <td>Intimidar</td>
+        <td id="inti"></td>
+      </tr>
+      <tr>
+        <td>Investigación</td>
+        <td id="inve"></td>
+      </tr>
+      <tr>
+        <td>Medicina</td>
+        <td id="medi"></td>
+      </tr>
+      <tr>
+        <td>Naturaleza</td>
+        <td id="natu"></td>
+      </tr>
+      <tr>
+        <td>Percepción</td>
+        <td id="perc"></td>
+      </tr>
+      <tr>
+        <td>Estilo</td>
+        <td id="estl"></td>
+      </tr>
+      <tr>
+        <td>Persuasión</td>
+        <td id="pers"></td>
+      </tr>
+      <tr>
+        <td>Religión</td>
+        <td id="reli"></td>
+      </tr>
+      <tr>
+        <td>Truco de manos</td>
+        <td id="tman"></td>
+      </tr>
+      <tr>
+        <td>Sigilo</td>
+        <td id="sigi"></td>
+      </tr>
+      <tr>
+        <td>Supervivencia</td>
+        <td id="surv"></td>
+      </tr>
+    </table>
+  </div>
+
+
+  <script type="text/javascript" src="js/mijs.js"></script>
+</body>
+</html>
